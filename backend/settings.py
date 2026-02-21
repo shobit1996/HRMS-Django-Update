@@ -14,8 +14,12 @@ SECRET_KEY = config('SECRET_KEY', default='django-insecure-fallback-key-change-m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=True, cast=bool)
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost,127.0.0.1,hrms-django-update-production.up.railway.app').split(',')
+# ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost,127.0.0.1,hrms-django-update-production.up.railway.app').split(',')
 # ALLOWED_HOSTS = ['*']
+
+ALLOWED_HOSTS = [
+    "hrms-django-production.up.railway.app",
+]
 
 
 # Application definition
