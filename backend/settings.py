@@ -15,11 +15,11 @@ SECRET_KEY = config('SECRET_KEY', default='django-insecure-fallback-key-change-m
 DEBUG = config('DEBUG', default=True, cast=bool)
 
 # ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost,127.0.0.1,hrms-django-update-production.up.railway.app').split(',')
-# ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*']
 
-ALLOWED_HOSTS = [
-    "hrms-django-production.up.railway.app",
-]
+# ALLOWED_HOSTS = [
+#     "hrms-django-production.up.railway.app",
+# ]
 CORS_ALLOW_ALL_ORIGINS = True
 CSRF_TRUSTED_ORIGINS = [
     "https://monumental-blini-c9326d.netlify.app",
