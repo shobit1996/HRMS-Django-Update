@@ -20,7 +20,10 @@ DEBUG = config('DEBUG', default=True, cast=bool)
 ALLOWED_HOSTS = [
     "hrms-django-production.up.railway.app",
 ]
-
+CORS_ALLOW_ALL_ORIGINS = True
+CSRF_TRUSTED_ORIGINS = [
+    "https://monumental-blini-c9326d.netlify.app",
+]
 
 # Application definition
 INSTALLED_APPS = [
